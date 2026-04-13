@@ -2,6 +2,11 @@ body{
    color:aqua;
 }
 
-.row celeste {
-    color:aqua;
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 10px;
 }
