@@ -1,8 +1,6 @@
 body{
-   background-color:aqua;
-     width:rem 30;
+  background-color:rgb(159, 245, 245);
 }
-
 .container {
   display: flex;
   flex-direction: row;
@@ -11,25 +9,31 @@ body{
   flex-wrap: nowrap;
   gap: 10px;
 }
-
 .container_header {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items:baseline;
+  align-items:center;
   flex-wrap: wrap;
   gap: 11px;
 }
-
 .container_nav {
   display: flex;
   flex-direction: row;
-  justify-content:center;
-  align-items:center;
-  flex-wrap:nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;
   gap: 10px;
-}
+  .button_nav {
+      box-sizing: content-box;
+    background-color:bisque;
+    border-color: none;
+  }
+  } 
+
 
 .hombre_desierto {
-  width: 100px;
+  box-sizing: content-box;
+  width:30%;
 }
+
