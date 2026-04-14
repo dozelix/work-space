@@ -14,7 +14,6 @@ nav {
   padding: 15px;
   text-align: center;
 }
-
 nav a {
   text-decoration: none;
   color: black;
@@ -26,15 +25,12 @@ header {
   padding: 40px;
   text-align: center;
 }
-
 header h1 {
   margin-bottom: 10px;
 }
-
 header p {
   margin-bottom: 20px;
 }
-
 header button {
   padding: 10px 20px;
   background-color: burlywood;
@@ -71,37 +67,38 @@ section h2 {
   width: 200px;
 }
 
-.beneficios-list {
+.container-list-beneficio {
   display: flex;
   gap: 20px;
   justify-content: center;
 }
 
-.beneficio {
+.container-beneficio {
   border: 1px solid #ddd;
   padding: 20px;
   width: 250px;
 }
+
+#container-noticia {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
 .noticia-principal {
   border: 1px solid #ccc;
   width: 30%;
   flex: auto;
+  flex-direction: row;
 }
+
 .noticia-secundaria {
   border: 1px solid #ccc;
   width: 15%;
-}
-
-.noticia {
-  display: flex;
-  gap: 20px;
-  justify-content: top;
-}
-
-.noticia img {
-    width: 50%; 
-    height: auto;
-    display: block;
+  flex-direction: row;
 }
 
 footer {
@@ -116,9 +113,6 @@ footer a {
   text-decoration: none;
 }
 
-footer a:hover {
-  text-decoration: underline;
-}
 
 .footer-container {
   max-width: 1000px;
