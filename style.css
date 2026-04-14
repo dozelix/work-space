@@ -110,32 +110,20 @@ footer a:hover {
   text-decoration: underline;
 }
 
-.footer-content {
+.footer-container {
   max-width: 1000px;
   margin: 0 auto;
-}
-
-.footer-info,
-.footer-address,
-.footer-copyright {
   margin-bottom: 15px;
 }
 
-.footer-info h3,
-.footer-address h3 {
+.footer-container h3 {
   margin-bottom: 8px;
   font-size: 14px;
 }
 
-.footer-info p,
-.footer-address p {
+.footer-container p {
   margin: 5px 0;
   font-size: 13px;
-}
-
-.footer-copyright p {
-  margin: 5px 0;
-  font-size: 12px;
 }
 
 * {
