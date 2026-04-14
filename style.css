@@ -24,8 +24,8 @@ header {
   box-sizing: content-box;
   background-image: url(https://static1.evcdn.net/images/reduction/163415_w-1200_h-630_q-70_m-crop.jpg);
   background-repeat: no-repeat;
-  background-size: cover;        /* llena el espacio manteniendo proporción */
-  background-position: center;   /* centra la imagen */
+  background-size:auto;        /* llena el espacio manteniendo proporción */
+  background-position: center;
   color: white;                  /* texto visible sobre la imagen */
   text-shadow: 1px 1px 4px rgba(0,0,0,0.7); /* contraste para legibilidad */
   padding: 80px 40px;            /* más espacio para centrar el contenido */
