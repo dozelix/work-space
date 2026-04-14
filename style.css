@@ -60,15 +60,26 @@ section {
 section h2 {
   margin-bottom: 20px;
 }
+#informacion {
+  display: flex;              /* activa flexbox */
+  flex-direction: column;     /* organiza en columna */
+  align-items: center;        /* centra horizontalmente los hijos */
+  gap: 20px;                  /* espacio entre elementos internos */
+  max-width: 1000px;          /* ancho máximo del bloque */
+  margin: 0 auto;             /* centra el contenedor en la página */
+  padding: 20px;              /* espacio interno */
+}
 
 
 #informacion figure {
-  display: flex;
   max-width: 100%;
   width: 300px;
-  justify-items: center;
-
+  display: flex;              /* activa flexbox dentro del figure */
+  justify-content: center;    /* centra horizontalmente el contenido */
+  align-items: center;        /* centra verticalmente si es necesario */
+  margin: 0 auto;             /* asegura que el figure se centre en el padre */
 }
+
 
 .servicios {
   display: flex;
