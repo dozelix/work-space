@@ -38,6 +38,12 @@ header p {
   margin-bottom: 20px;
 }
 
+header .subtitulo {
+  font-size: 14px;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
 header button {
   padding: 10px 20px;
   background-color:burlywood;
@@ -64,6 +70,11 @@ section h2 {
 
 section p {
   text-align: center;
+}
+
+.descripcion-servicios {
+  margin-bottom: 30px;
+  font-weight: 500;
 }
 
 .servicios {
