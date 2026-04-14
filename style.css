@@ -82,23 +82,44 @@ section h2 {
 #container-noticia {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content:center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 5%;
 }
 
+#container-noticia h1 {
+  width: 100%;
+  text-align: top;
+  margin-bottom: 20px;
+}
+
+#container-noticia h2 {
+  width: 20rem;
+  max-width: 100%;
+  text-align:unset;
+  margin-bottom: 20px;
+}
+
+
+#container-noticia img {
+  max-width: 100%;
+  width: 300px;
+}
+
+
 .noticia-principal {
+  max-width: 100%;
   border: 1px solid #ccc;
   width: 30%;
   flex: auto;
-  flex-direction: row;
 }
 
 .noticia-secundaria {
+  max-width: 100%;
   border: 1px solid #ccc;
   width: 15%;
-  flex-direction: row;
+
 }
 
 footer {
