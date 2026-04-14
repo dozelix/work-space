@@ -1,20 +1,14 @@
-/* Reset y base */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "roboto", sans-serif;
   display: flex;
   flex-direction: column;
   background-color: white;
   color: black;
   min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
-/* Navegación */
 nav {
   background-color: bisque;
   padding: 15px;
@@ -23,147 +17,166 @@ nav {
 nav a {
   text-decoration: none;
   color: black;
-  margin: 0 15px;
+  margin: auto 15px;
 }
 
-/* Header */
 header {
+  box-sizing: content-box;
   background-image: url(https://static1.evcdn.net/images/reduction/163415_w-1200_h-630_q-70_m-crop.jpg);
   background-repeat: no-repeat;
-  background-size: cover;        /* mejor que auto para encajar */
+  background-size:auto;        /* llena el espacio manteniendo proporción */
   background-position: center;
-  color: white;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
-  padding: 80px 40px;
+  color: white;                  /* texto visible sobre la imagen */
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7); /* contraste para legibilidad */
+  padding: 80px 40px;            /* más espacio para centrar el contenido */
   text-align: center;
 }
 header h1 {
   margin-bottom: 10px;
-  font-size: 2.5em;
 }
 header p {
   margin-bottom: 20px;
-  font-size: 1.2em;
 }
 header button {
-  padding: 12px 24px;
+  padding: 10px 20px;
   background-color: burlywood;
   color: black;
   border: none;
-  border-radius: 4px;
   cursor: pointer;
-  font-weight: bold;
 }
 
-/* Main */
 main {
   padding: 40px;
   max-width: 1000px;
   margin: 0 auto;
   flex: 1;
 }
+
 section {
   margin-bottom: 40px;
   text-align: center;
 }
+
 section h2 {
   margin-bottom: 20px;
 }
 
-/* Información */
+
 #informacion figure {
   display: flex;
-  justify-content: center;   /* centra la imagen */
+  max-width: 100%;
   width: 300px;
-  margin: 0 auto;            /* asegura centrado horizontal */
+  justify-items: center;
+
 }
 
-/* Servicios */
 .servicios {
   display: flex;
   gap: 20px;
   justify-content: center;
 }
+
 .servicios div {
   border: 1px solid #ccc;
   padding: 20px;
   width: 200px;
 }
 
-/* Beneficios */
-#beneficios {
-  display: flex;              /* activa flexbox */
-  flex-wrap: wrap;            /* permite que los beneficios bajen a otra fila */
-  justify-content: center;    /* centra horizontalmente */
-  gap: 20px;                  /* espacio entre cada beneficio */
-  max-width: 1000px;          /* ancho máximo del bloque */
-  margin: 0 auto;             /* centra el contenedor en la página */
-  padding: 20px;              /* espacio interno */
-}
-
-
 .container-list {
   display: flex;
-  justify-content: center;
+  flex-direction:row;
+  justify-content:center;
+  flex-wrap:nowrap;
   gap: 20px;
 }
+
 .container-beneficio {
   border: 1px solid #ddd;
   padding: 20px;
   width: 250px;
 }
 
-#noticias {
-  display: flex;              /* activa flexbox */
-  flex-wrap: wrap;            /* permite que se acomoden en varias filas */
-  justify-content:center;    /* centra horizontalmente las noticias */
-  gap: 20px;                  /* espacio entre elementos */
-  max-width: 1000px;          /* ancho máximo del bloque */
-  margin: 0 auto;             /* centra el contenedor en la página */
-  padding: 20px;              /* espacio interno */
-}
+/* me di cuenta que algo de aqui me descentra las imagenes, sabra quien por que ocurre */
+/* #container-noticia {
+  box-sizing: border-box;
+  border-width: 1px;
+  margin: 0;
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10%;
+} */
 
-/* Noticias */
 #container-noticia h1 {
   display: flex;
-  justify-content: center;
   gap: 20px;
-}
-#container-noticia h2 {
-  width: 14rem;
-}
-#container-noticia img {
-  max-width: 100%;
-  border: 2px solid black;
-}
-.noticia-principal {
-  border: 1px solid #ccc;
-  width: 30rem;
-}
-.noticia-secundaria {
-  border: 1px solid #ccc;
-  width: 15rem;
+  justify-content: center;
 }
 
-/* Footer */
+#container-noticia h2 {
+  width:14rem;
+  max-width: 100%;
+
+}
+
+
+#container-noticia img {
+  max-width: 100%;
+  border: black solid 2px;
+}
+
+
+.noticia-principal {
+  max-width: 100%;
+  border: 1px solid #ccc;
+  flex: auto;
+  width: 30rem;
+}
+
+.noticia-secundaria {
+  max-width: 100%;
+  border: 1px solid #ccc;
+  flex: auto;
+  width: 15rem;
+
+}
+
 footer {
   background-color: darkred;
   color: white;
   text-align: center;
   padding: 20px;
 }
+
 footer a {
   color: white;
   text-decoration: none;
 }
+
+
 .footer-container {
   max-width: 1000px;
-  margin: 0 auto 15px;
+  margin: 0 auto;
+  margin-bottom: 15px;
 }
+
 .footer-container h3 {
   margin-bottom: 8px;
   font-size: 14px;
 }
+
 .footer-container p {
+  margin: 0;
   font-size: 13px;
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
