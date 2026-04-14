@@ -1,7 +1,7 @@
 body {
+  font-family: "roboto", sans-serif;
   display: flex;
   flex-direction: column;
-  font-family: Arial, sans-serif;
   background-color: white;
   color: black;
   min-height: 100vh;
@@ -111,9 +111,8 @@ section h2 {
 }
 
 #container-noticia h2 {
-  width:16rem;
+  width:14rem;
   max-width: 100%;
-  text-align:inherit;
 
 }
 
