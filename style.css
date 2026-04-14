@@ -55,6 +55,15 @@ section h2 {
   margin-bottom: 20px;
 }
 
+
+#informacion figure {
+  display: flex;
+  max-width: 100%;
+  width: 300px;
+  justify-items: center;
+
+}
+
 .servicios {
   display: flex;
   gap: 20px;
@@ -73,7 +82,6 @@ section h2 {
   justify-content:center;
   flex-wrap:nowrap;
   gap: 20px;
-  justify-content: center;
 }
 
 .container-beneficio {
@@ -82,7 +90,8 @@ section h2 {
   width: 250px;
 }
 
-#container-noticia {
+/* me di cuenta que algo de aqui me descentra las imagenes, sabra quien por que ocurre */
+/* #container-noticia {
   box-sizing: border-box;
   border-width: 1px;
   margin: 0;
@@ -93,7 +102,7 @@ section h2 {
   align-items: center;
   flex-wrap: wrap;
   gap: 10%;
-}
+} */
 
 #container-noticia h1 {
   display: flex;
@@ -104,13 +113,14 @@ section h2 {
 #container-noticia h2 {
   width:16rem;
   max-width: 100%;
+  text-align:inherit;
 
 }
 
 
 #container-noticia img {
   max-width: 100%;
-  width:fit-content;
+  border: black solid 2px;
 }
 
 
