@@ -67,8 +67,11 @@ section h2 {
   width: 200px;
 }
 
-.container-list-beneficio {
+.container-list {
   display: flex;
+  flex-direction:row;
+  justify-content:center;
+  flex-wrap:nowrap;
   gap: 20px;
   justify-content: center;
 }
@@ -80,45 +83,49 @@ section h2 {
 }
 
 #container-noticia {
+  box-sizing: border-box;
+  border-width: 1px;
+  margin: 0;
+  width: 400px;
   display: flex;
   flex-direction: row;
   justify-content:center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 5%;
+  gap: 10%;
 }
 
 #container-noticia h1 {
-  width: 100%;
-  text-align: top;
-  margin-bottom: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
 }
 
 #container-noticia h2 {
-  width: 20rem;
+  width:16rem;
   max-width: 100%;
-  text-align:unset;
-  margin-bottom: 20px;
+
 }
 
 
 #container-noticia img {
   max-width: 100%;
-  width: 300px;
+  width:fit-content;
 }
 
 
 .noticia-principal {
   max-width: 100%;
   border: 1px solid #ccc;
-  width: 30%;
   flex: auto;
+  width: 30rem;
 }
 
 .noticia-secundaria {
   max-width: 100%;
   border: 1px solid #ccc;
-  width: 15%;
+  flex: auto;
+  width: 15rem;
 
 }
 
