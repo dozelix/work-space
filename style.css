@@ -11,7 +11,7 @@ body {
 
 nav {
   background-color: bisque;
-  padding:100%;
+  padding: 15px;
   text-align: center;
 }
 nav a {
@@ -22,17 +22,17 @@ nav a {
 
 header {
   background-color: azure;
-  padding: 20rem;
+  padding: 40px;
   text-align: center;
 }
 header h1 {
-  margin-bottom: 14rem;
+  margin-bottom: 10px;
 }
 header p {
-  margin-bottom: 10rem;
+  margin-bottom: 20px;
 }
 header button {
-  padding: 10rem 20rem;
+  padding: 10px 20px;
   background-color: burlywood;
   color: black;
   border: none;
@@ -40,7 +40,7 @@ header button {
 }
 
 main {
-  padding: 20rem;
+  padding: 40px;
   max-width: 1000px;
   margin: 0 auto;
   flex: 1;
