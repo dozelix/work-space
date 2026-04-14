@@ -91,6 +91,17 @@ section h2 {
 }
 
 /* Beneficios */
+#beneficios {
+  display: flex;              /* activa flexbox */
+  flex-wrap: wrap;            /* permite que los beneficios bajen a otra fila */
+  justify-content: center;    /* centra horizontalmente */
+  gap: 20px;                  /* espacio entre cada beneficio */
+  max-width: 1000px;          /* ancho máximo del bloque */
+  margin: 0 auto;             /* centra el contenedor en la página */
+  padding: 20px;              /* espacio interno */
+}
+
+
 .container-list {
   display: flex;
   justify-content: center;
@@ -100,6 +111,16 @@ section h2 {
   border: 1px solid #ddd;
   padding: 20px;
   width: 250px;
+}
+
+#noticias {
+  display: flex;              /* activa flexbox */
+  flex-wrap: wrap;            /* permite que se acomoden en varias filas */
+  justify-content:center;    /* centra horizontalmente las noticias */
+  gap: 20px;                  /* espacio entre elementos */
+  max-width: 1000px;          /* ancho máximo del bloque */
+  margin: 0 auto;             /* centra el contenedor en la página */
+  padding: 20px;              /* espacio interno */
 }
 
 /* Noticias */
